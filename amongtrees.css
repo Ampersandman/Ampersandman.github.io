@@ -1,0 +1,147 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container {
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    pointer-events: none;
+}
+
+.logo {
+    display: block;
+    width: auto;
+    max-width: 500px;
+}
+
+.legend {
+    display: flex;
+    font-weight: 600;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    width: 100vw;
+    padding: 15px 0;
+    background-color: #0d0416;
+    color: #fff;
+    user-select: none;
+    flex-wrap: wrap;
+}
+
+.legend__item input {
+    -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+     -ms-appearance: none !important;
+     -o-appearance: none !important;
+     appearance: none !important;
+}
+
+.legend__item input::before {
+    position: absolute;
+    left: 28px;
+    top: 20px;
+    content: '';
+    display: block;
+    transform: rotate(-45deg);
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+#home:checked:before {
+    background-color: #E82253;
+}
+
+#bear:checked:before {
+    background-color: #995474;
+}
+
+#honey:checked:before {
+    background-color: #EEBF38;
+}
+
+#lime:checked:before {
+    background-color: #4ADEF2;
+}
+
+#blueprint:checked:before {
+    background-color: #3399FF;
+}
+
+#chicory:checked:before {
+    background-color: #2AC940;
+}
+
+#larch:checked:before {
+    background-color: #EE8438;
+}
+
+#loot:checked:before {
+    background-color: #404040;
+}
+
+.legend__item {
+    position: relative;
+    display: flex;
+    margin: 0 15px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.legend__item img {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.legend__item label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.map {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.leaflet-popup-content-wrapper {
+    background: #000;
+    color: #fff;
+    box-shadow: none;
+    padding: 5px;
+    text-align: center;
+    border-radius: 0;
+}
+
+.leaflet-popup-content {
+    margin: 0;
+}
+
+.leaflet-popup-tip {
+    background-color: #000;
+    width: 6px;
+    height: 6px;
+    margin: -4px auto 0;
+}
+
+.leaflet-popup-close-button {
+    display: none;
+}

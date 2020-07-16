@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg">
+        <title>Among Trees Map</title>
+        <link rel="stylesheet" href="leaflet.css"/>
+        <link rel="stylesheet" href="amongtrees.css"/>
+        <link rel="stylesheet" href="mouseposition.css"/>
+        <script src="jquery-3.5.1.min.js"></script>
+        <script src="leaflet.js"></script>
+        <script src="mouseposition.js"></script>
+    </head>
+</html>
+<body>
+    <div class="logo-container">
+        <img src="images/logo.png" class="logo"/>
+    </div>
+    <div class="legend">
+        <div class="legend__item"><input id="all" type="checkbox" checked><label for="all">Show/Hide all</label></div>
+        <div class="legend__item"><input id="home" type="checkbox" checked><label for="home"><img src="images/homeico.svg">Home</label></div>
+        <div class="legend__item"><input id="bear" type="checkbox" checked><label for="bear"><img src="images/bearico.svg">Bears</label></div>
+        <div class="legend__item"><input id="honey" type="checkbox" checked><label for="honey"><img src="images/honeyico.svg">Honey</label></div>
+        <div class="legend__item"><input id="lime" type="checkbox" checked><label for="lime"><img src="images/limeico.svg">Limestone</label></div>
+        <div class="legend__item"><input id="blueprint" type="checkbox" checked><label for="blueprint"><img src="images/blueprintico.svg">Blueprints</label></div>
+        <div class="legend__item"><input id="chicory" type="checkbox" checked><label for="chicory"><img src="images/chicoryico.svg">Chicory</label></div>
+        <div class="legend__item"><input id="larch" type="checkbox" checked><label for="larch"><img src="images/larchico.svg">Larchtrees</label></div>
+        <div class="legend__item"><input id="loot" type="checkbox" checked><label for="loot"><img src="images/lootico.svg">Loot sites</label></div>
+    </div>
+    <div id="map" class="map"></div>
+    <script src="amongtrees.min.js"></script>
+</body>
+
