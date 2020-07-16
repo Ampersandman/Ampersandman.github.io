@@ -27,13 +27,15 @@ body {
 .legend {
     display: flex;
     font-weight: 600;
-    flex-direction: row;
-    align-items: center;
+    height: 100vh;
+    width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     position: absolute;
     z-index: 999;
-    bottom: 0;
-    width: 100vw;
+    top: 0;
+    right: 0;
     padding: 15px 0;
     background-color: #0d0416;
     color: #fff;
@@ -82,7 +84,15 @@ body {
 }
 
 #chicory:checked:before {
-    background-color: #2AC940;
+    background-color: #A1ADFE;
+}
+
+#cattail:checked:before {
+    background-color: #07924C;
+}
+
+#dogbane:checked:before {
+    background-color: #9DA440;
 }
 
 #larch:checked:before {
@@ -96,14 +106,14 @@ body {
 .legend__item {
     position: relative;
     display: flex;
-    margin: 0 15px;
+    margin: 0 30px;
     padding: 20px;
     justify-items: center;
     align-items: center;
 }
 
 .legend__item img {
-    margin-right: 15px;
+    margin-right: 20px;
     width: 30px;
     height: 30px;
 }
@@ -118,6 +128,7 @@ body {
 
 .map {
     height: 100vh;
+    width: calc(100vw - 300px);
     margin: 0;
     padding: 0;
 }
